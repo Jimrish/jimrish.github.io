@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>குட்டிமா TV — குழந்தைகளுக்கான கதை & கற்றல்</title>
+  <meta name="description" content="குட்டிமா TV – தமிழ்/ஆங்கிலத்தில் குட்டிகளுக்கான கதைகள், பாடல்கள், எழுத்துக்கள், எண்கள் மற்றும் வேடிக்கையான செயல்பாடுகள்." />
+  <meta property="og:title" content="குட்டிமா TV" />
+  <meta property="og:description" content="குழந்தைகளுக்கான கதைகள், பாடல்கள், மற்றும் கற்றல் வீடியோக்கள் – தமிழ்/ஆங்கிலம்." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#f59e0b" />
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="%23fde68a"/><text x="32" y="40" font-size="28" text-anchor="middle">🎈</text></svg>' />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #0d1330;
+      --text: #fffaf0;
+      --muted: #cbd5e1;
+      --brand: #f59e0b;   /* amber-500 */
+      --accent: #60a5fa;  /* blue-400 */
+      --ring: rgba(245, 158, 11, .35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:radial-gradient(1200px 800px at 10% -10%,rgba(56,189,248,.12),transparent 60%),radial-gradient(900px 600px at 110% 10%,rgba(34,211,238,.12),transparent 60%),var(--bg);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1100px,92%);margin-inline:auto}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.8rem 1.1rem;border-radius:999px;border:1px solid rgba(148,163,184,.18);background:linear-gradient(180deg,rgba(245,158,11,.18),rgba(245,158,11,.08));backdrop-filter:blur(6px);box-shadow:0 10px 30px -10px rgba(245,158,11,.35);transition:transform .2s, box-shadow .2s}
+    .btn:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 16px 44px -12px rgba(245,158,11,.55)}
+    .btn.secondary{background:transparent}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 14px 40px -12px rgba(56,189,248,.45)}
+    .btn.secondary{background:transparent}
+    .chip{font-size:.8rem;color:var(--muted);border:1px solid rgba(148,163,184,.25);padding:.3rem .6rem;border-radius:999px;display:inline-flex;align-items:center;gap:.4rem;background:rgba(14,23,41,.6)}
+    header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,rgba(11,18,32,.9),rgba(11,18,32,.65) 40%,rgba(11,18,32,0));backdrop-filter:blur(8px);border-bottom:1px solid rgba(148,163,184,.12)}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:.7rem 0}
+    nav .links{display:flex;gap:1rem;align-items:center}
+    nav a{color:var(--muted)}
+    nav a:hover{color:var(--text)}
+    .hero{padding:6rem 0 4rem;display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}}
+    .hero h1{font-size:clamp(2rem,3.5vw,3.2rem);line-height:1.1;margin:0 0 1rem;font-weight:800}
+    .hero p{color:var(--muted);margin:0 0 1.5rem}
+    .card{background:linear-gradient(180deg,rgba(14,23,41,.8),rgba(14,23,41,.6));border:1px solid rgba(148,163,184,.15);border-radius:1.2rem;padding:1.2rem}
+    .grid{display:grid;gap:1rem}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:900px){.grid.cols-3,.grid.cols-2{grid-template-columns:1fr}}
+    section{padding:3rem 0}
+    h2{font-size:1.6rem;margin:0 0 1rem}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+    @media (max-width:700px){.gallery{grid-template-columns:repeat(2,1fr)}}
+    .gallery img{border-radius:.8rem;border:1px solid rgba(148,163,184,.18)}
+    form{display:grid;gap:.8rem}
+    input,textarea{width:100%;padding:.9rem;border-radius:.8rem;border:1px solid rgba(148,163,184,.2);background:#0d1425;color:var(--text);outline:none}
+    input:focus,textarea:focus{box-shadow:0 0 0 6px var(--ring);border-color:var(--brand)}
+    footer{padding:2rem 0;color:var(--muted);border-top:1px solid rgba(148,163,184,.12)}
+    .badge{position:absolute;inset:auto auto 12px 12px}
+  @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+    .floaty{animation:floaty 4s ease-in-out infinite}
+    @media (prefers-reduced-motion: reduce){.floaty{animation:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="chip" aria-label="Home"><img src="logo.png" alt="KuttymaTV Logo" style="height:32px;width:auto;border-radius:8px;vertical-align:middle;"> KuttymaTV</a>
+        <div class="links">
+          <a id="navAbout" href="#about">எங்களை பற்றி</a>
+          <a id="navServices" href="#services">நாங்கள் செய்வது</a>
+          <a id="navProjects" href="#projects">வீடியோக்கள்</a>
+          <a id="navContact" href="#contact">தொடர்பு</a>
+          <a id="navCTA" class="btn" href="#contact">இப்போதே சேருங்கள் →</a>
+          <button id="langToggle" class="btn secondary" type="button" aria-label="Change language">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="chip">🎈 குழந்தைகள் மகிழ்ச்சியுடன் கற்கட்டும்</div>
+        <h1 id="heroTitle">குட்டிமா TV — கதைகள், பாடல்கள் & கற்றல்</h1>
+        <p id="heroDesc">வணக்கம்! குட்டிமா TV-க்கு வரவேற்கிறோம். தமிழ் & ஆங்கிலத்தில் நிறமயமான குறும்படங்கள் மூலம் எழுத்துக்கள், எண்கள், நல்ல பழக்கங்கள், விலங்குகள், வடிவங்கள் போன்ற பலவற்றை எளிதாகவும் பாதுகாப்பாகவும் குழந்தைகளுக்கு கற்பிக்கிறோம்.</p>
+        <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+          <a id="btnVideos" class="btn" href="#projects">வீடியோக்கள் பார்க்க</a>
+          <a id="btnSubscribe" class="btn secondary" href="#contact">Subscribe செய்ய</a>
+        </div>
+      </div>
+      <div>
+        <div class="card floaty" style="position:relative">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="குட்டிகளுடன் கற்றல்" style="border-radius:1rem" />
+          <span class="chip badge">❤️ HTML/CSS மூலம் உருவாக்கப்பட்டது</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 id="aboutTitle">எங்களை பற்றி</h2>
+      எங்களை பற்றி</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <p>குட்டிமா TV உங்கள் குழந்தைகளுக்காக உருவாக்கப்பட்ட பாதுகாப்பான கற்றல் தளம். சுலபமாக புரியும் மொழியில், நிறங்கள் & இசையுடன் கற்றலை இனிமையாக்குகிறோம். வண்ணங்களை மாற்ற <code>:root</code> CSS மாறிகளை மாற்றலாம்.</p>
+        </div>
+        <div class="card">
+          <ul style="margin:0;padding-left:1.1rem">
+            <li>வேகமான, மொபைல் நட்பு வடிவமைப்பு</li>
+            <li>எந்த framework-மும் தேவையில்லை</li>
+            <li>ஒரே கோப்பு – பராமரிக்க எளிது</li>
+            <li>முழுக்க முழுக்க இலவசமாக வெளியிடலாம்</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 id="servicesTitle">நாங்கள் செய்வது</h2>
+      நாங்கள் செய்வது</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3 style="margin:.2rem 0 .6rem">கதைகள் (தமிழ்/English)</h3><p class="muted">நல்லுணர்வு கதைகள், விலங்கு கதைகள், bedtime narration.</p></div>
+        <div class="card"><h3 style="margin:.2rem 0 .6rem">பாடல்கள் & ABC/123</h3><p class="muted">அகரவரிசை, எண்கள், வடிவங்கள், நிறங்கள் – மெல்லிசைத் தொடர்கள்.</p></div>
+        <div class="card"><h3 style="margin:.2rem 0 .6rem">செயல்பாடுகள்</h3><p class="muted">வரைவோம், எண்ணிப்போம், நல்ல பழக்கங்கள், தினசரி பழக்கங்கள்.</p></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 id="projectsTitle">சமீபத்திய வீடியோக்கள்</h2>
+      சமீபத்திய வீடியோக்கள்</h2>
+      <div class="gallery">
+        <a href="https://youtube.com/@KuttymaTV?sub_confirmation=1" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=1200&auto=format&fit=crop" alt="அகரவரிசை பாடல்" /></a>
+        <a href="https://youtube.com/@KuttymaTV?sub_confirmation=1" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="தமிழில் நல்லுணர்வு கதை" /></a>
+        <a href="https://youtube.com/@KuttymaTV?sub_confirmation=1" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="வடிவங்கள் & நிறங்கள்" /></a>
+        <a href="https://youtube.com/@KuttymaTV?sub_confirmation=1" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?q=80&w=1200&auto=format&fit=crop" alt="1–10 எண்ணிக்கை" /></a>
+        <a href="https://youtube.com/@KuttymaTV?sub_confirmation=1" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1200&auto=format&fit=crop" alt="நல்ல பழக்கங்கள்" /></a>
+        <a href="https://youtube.com/@KuttymaTV?sub_confirmation=1" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=1200&auto=format&fit=crop" alt="விலங்குகள் & ஒலிகள்" /></a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 id="contactTitle">தொடர்பு</h2>
+      தொடர்பு</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <form action="mailto:hello@kuttymatv.example" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="பெயர் (Parent/Guardian)" required>
+            <input type="email" name="email" placeholder="மின்னஞ்சல்" required>
+            <textarea name="message" rows="5" placeholder="வணக்கம் சொல்லுங்கள் அல்லது ஒரு வீடியோ தலைப்பை பரிந்துரைக!"></textarea>
+            <button class="btn" type="submit">செய்தியை அனுப்பு</button>
+          </form>
+        </div>
+        <div class="card">
+          <p><strong>மின்னஞ்சல்:</strong> hello@kuttymatv.example<br>
+          <strong>இடம்:</strong> இந்தியா<br>
+          <strong>சோஷியல்:</strong> <a href="https://youtube.com/@KuttymaTV" target="_blank" rel="noopener">YouTube</a> · <a href="#">Instagram</a> · <a href="#">Facebook</a></p>
+          <p class="muted">WhatsApp/Telegram இணைப்புகளை இங்கே சேர்த்து பெற்றோருடன் விரைவாக தொடர்புகொள்ளலாம்.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+        <span>© <span id="year"></span> குட்டிமா TV</span>
+        <span>இலவச வார்ப்புருவில் ❤ கொண்டு உருவாக்கப்பட்டது.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple bilingual toggle (TA ⇄ EN) for key labels
+    const STRINGS = {
+      ta: {
+        htmlLang: 'ta',
+        navAbout: 'எங்களை பற்றி', navServices: 'நாங்கள் செய்வது', navProjects: 'வீடியோக்கள்', navContact: 'தொடர்பு', navCTA: 'இப்போதே சேருங்கள் →',
+        heroTitle: 'குட்டிமா TV — கதைகள், பாடல்கள் & கற்றல்',
+        heroDesc: 'வணக்கம்! குட்டிமா TV-க்கு வரவேற்கிறோம். தமிழ் & ஆங்கிலத்தில் நிறமயமான குறும்படங்கள் மூலம் எழுத்துக்கள், எண்கள், நல்ல பழக்கங்கள், விலங்குகள், வடிவங்கள் போன்ற பலவற்றை எளிதாகவும் பாதுகாப்பாகவும் குழந்தைகளுக்கு கற்பிக்கிறோம்.',
+        btnVideos: 'வீடியோக்கள் பார்க்க', btnSubscribe: 'Subscribe செய்ய',
+        aboutTitle: 'எங்களை பற்றி', servicesTitle: 'நாங்கள் செய்வது', projectsTitle: 'சமீபத்திய வீடியோக்கள்', contactTitle: 'தொடர்பு',
+        toggle: 'EN'
+      },
+      en: {
+        htmlLang: 'en',
+        navAbout: 'About', navServices: 'What we make', navProjects: 'Videos', navContact: 'Contact', navCTA: 'Join now →',
+        heroTitle: 'KuttymaTV — Stories, Rhymes & Learning',
+        heroDesc: 'Welcome to KuttymaTV! Short, colorful videos teach letters, numbers, good habits, animals and shapes in Tamil & English — safe and fun for kids.',
+        btnVideos: 'Watch Videos', btnSubscribe: 'Subscribe',
+        aboutTitle: 'About', servicesTitle: 'What we make', projectsTitle: 'Latest Videos', contactTitle: 'Contact',
+        toggle: 'TA'
+      }
+    };
+
+    const ids = ['navAbout','navServices','navProjects','navContact','navCTA','heroTitle','heroDesc','btnVideos','btnSubscribe','aboutTitle','servicesTitle','projectsTitle','contactTitle'];
+    const toggleBtn = document.getElementById('langToggle');
+    let current = 'ta';
+    const apply = (lang) => {
+      document.documentElement.lang = STRINGS[lang].htmlLang;
+      ids.forEach(id => { const el = document.getElementById(id); if(el && STRINGS[lang][id]) el.textContent = STRINGS[lang][id]; });
+      if(toggleBtn){ toggleBtn.textContent = STRINGS[lang].toggle; }
+      current = lang;
+    };
+    if(toggleBtn){ toggleBtn.addEventListener('click', () => apply(current === 'ta' ? 'en' : 'ta')); }
+    // ensure TA default on load
+    apply('ta');
+  </script>
+</body>
+</html>
