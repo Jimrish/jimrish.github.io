@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="ta">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>குட்டிமா TV — குழந்தைகளுக்கான கதை & கற்றல்</title>
+  <meta name="description" content="குட்டிமா TV – தமிழ்/ஆங்கிலத்தில் குட்டிகளுக்கான கதைகள், பாடல்கள், எழுத்துக்கள், எண்கள் மற்றும் வேடிக்கையான செயல்பாடுகள்." />
+  <meta name="theme-color" content="#f59e0b" />
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="%23fde68a"/><text x="32" y="40" font-size="28" text-anchor="middle">🎈</text></svg>' />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #0d1330;
+      --text: #fffaf0;
+      --muted: #cbd5e1;
+      --brand: #f59e0b;
+      --accent: #60a5fa;
+      --ring: rgba(245, 158, 11, .35);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Arial;background:var(--bg);color:var(--text);}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%}
+    header{background:#0b1020cc;backdrop-filter:blur(6px);position:sticky;top:0;padding:.7rem 0;border-bottom:1px solid #ffffff22}
+    .container{width:min(1100px,92%);margin:auto}
+    nav{display:flex;justify-content:space-between;align-items:center}
+    .links{display:flex;gap:1rem;align-items:center}
+    .chip{padding:.3rem .7rem;border-radius:999px;background:#ffffff22;font-size:.8rem}
+    .btn{padding:.7rem 1rem;border-radius:999px;background:var(--brand);color:black;font-weight:bold}
+    .btn.secondary{background:transparent;border:1px solid var(--brand);color:var(--brand)}
+    section{padding:3rem 0}
+    h1,h2{margin:0 0 1rem}
+    .grid{display:grid;gap:1rem}
+    .cols-2{grid-template-columns:repeat(2,1fr)}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    @media(max-width:900px){.cols-2,.cols-3{grid-template-columns:1fr}}
+    .card{padding:1rem;background:#ffffff0d;border:1px solid #ffffff22;border-radius:1rem}
+    @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+    .floaty{animation:floaty 4s ease-in-out infinite}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="chip"><img src="logo.png" style="height:28px;border-radius:6px;vertical-align:middle"> குட்டிமா TV</a>
+        <div class="links">
+          <a href="#about">எங்களை பற்றி</a>
+          <a href="#services">நாங்கள் செய்வது</a>
+          <a href="#projects">வீடியோக்கள்</a>
+          <a href="#contact">தொடர்பு</a>
+        </div>
+      </nav>
+    </div>
+  </header>  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="chip">🎈 குழந்தைகள் மகிழ்ச்சியுடன் கற்கட்டும்</div>
+        <h1>குட்டிமா TV — கதைகள், பாடல்கள் & கற்றல்</h1>
+        <p>வணக்கம்! நிறமயமான குறும்படங்கள் மூலம் எழுத்துக்கள், எண்கள், நல்ல பழக்கங்கள், விலங்குகள், வடிவங்கள் போன்ற பலவற்றை எளிதாகவும் பாதுகாப்பாகவும் குழந்தைகளுக்கு கற்பிக்கிறோம்.</p>
+      </div>
+      <div>
+        <div class="card floaty">
+          <img src="hero.png"">
+        </div>
+      </div>
+    </section><section id="about">
+  <h2>எங்களை பற்றி</h2>
+  <div class="grid cols-2">
+    <div class="card">குட்டிமா TV குழந்தைகளுக்கான பாதுகாப்பான கற்றல் தளம்.</div>
+    <div class="card"><ul><li>மொபைல் நட்பு</li><li>நிறமயமான கற்றல்</li><li>குழந்தைகளுக்கான பாதுகாப்பு</li></ul></div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>நாங்கள் செய்வது</h2>
+  <div class="grid cols-3">
+    <div class="card">கதைகள்</div>
+    <div class="card">பாடல்கள் / ABC / 123</div>
+    <div class="card">செயல்பாடுகள்</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>சமீபத்திய வீடியோக்கள்</h2>
+  <div class="card" style="overflow:hidden">
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed?listType=playlist&list=UUCch__Vn91S_Fub05SXh4rQ" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>தொடர்பு</h2>
+  <div class="grid cols-2">
+    <div class="card">
+      <form action="mailto:hello@kuttymatv.com" method="post" enctype="text/plain">
+        <input type="text" placeholder="பெயர்" required>
+        <input type="email" placeholder="மின்னஞ்சல்" required>
+        <textarea rows="5" placeholder="உங்கள் செய்தி"></textarea>
+        <button class="btn">அனுப்பு</button>
+      </form>
+    </div>
+    <div class="card">YouTube: <a href="https://youtube.com/@KuttymaTV">KuttymaTV</a></div>
+  </div>
+</section>
+
+  </main>  <footer class="container" style="padding:2rem 0;color:#cbd5e1">© <span id="year"></span> குட்டிமா TV</footer>  <script>document.getElementById('year').textContent=new Date().getFullYear()</script></body>
+</html>
