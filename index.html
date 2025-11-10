@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="ta">
+<!DOCTYPE html><html lang="ta">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -33,7 +32,12 @@
     .grid{display:grid;gap:1rem}
     .cols-2{grid-template-columns:repeat(2,1fr)}
     .cols-3{grid-template-columns:repeat(3,1fr)}
-    @media(max-width:900px){.cols-2,.cols-3{grid-template-columns:1fr}}
+    .cols-4{grid-template-columns:repeat(4,1fr)}
+    @media(max-width:900px){.cols-2,.cols-3,.cols-4{grid-template-columns:1fr 1fr}}
+    .video-card{background:#ffffff0d;border:1px solid #ffffff22;border-radius:.8rem;overflow:hidden}
+    .video-card a{display:block}
+    .video-card img{display:block;width:100%;height:auto}
+    .video-card .meta{padding:.6rem .7rem;color:var(--muted);font-size:.9rem;line-height:1.3}
     .card{padding:1rem;background:#ffffff0d;border:1px solid #ffffff22;border-radius:1rem}
     @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
     .floaty{animation:floaty 4s ease-in-out infinite}
@@ -52,86 +56,115 @@
         </div>
       </nav>
     </div>
-  </header>
-
-  <main class="container">
+  </header>  <main class="container">
     <section class="hero">
       <div>
         <div class="chip">🎈 குழந்தைகள் மகிழ்ச்சியுடன் கற்கட்டும்</div>
         <h1>குட்டிமா TV — கதைகள், பாடல்கள் & கற்றல்</h1>
         <p>வணக்கம்! நிறமயமான குறும்படங்கள் மூலம் எழுத்துக்கள், எண்கள், நல்ல பழக்கங்கள், விலங்குகள், வடிவங்கள் போன்ற பலவற்றை எளிதாகவும் பாதுகாப்பாகவும் குழந்தைகளுக்கு கற்பிக்கிறோம்.</p>
-        <a class="btn" href="#videos">வீடியோக்கள் பார்க்க</a>
+        <a class="btn" href="#videos">வீடியோக்கள் பார்க்க</a><!-- Featured 12 videos grid -->
+    <div class="grid cols-3" style="margin-top:1.5rem;gap:1rem">
+      <iframe height="120" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
+      <iframe height="120" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+      <iframe height="120" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+      <iframe height="120" src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+      <iframe height="120" src="https://www.youtube.com/embed/VIDEO_ID_5" frameborder="0" allowfullscreen></iframe>
+      <iframe height="120" src="https://www.youtube.com/embed/VIDEO_ID_6" frameborder="0" allowfullscreen></iframe>
+      <iframe height="120" src="https://www.youtube.com/embed/VIDEO_ID_7" frameborder="0" allowfullscreen></iframe>
+      <iframe height="120" src="https://www.youtube.com/embed/VIDEO_ID_8" frameborder="0" allowfullscreen></iframe>
+      <iframe height="120" src="https://www.youtube.com/embed/VIDEO_ID_9" frameborder="0" allowfullscreen></iframe>
+      <iframe height="120" src="https://www.youtube.com/embed/VIDEO_ID_10" frameborder="0" allowfullscreen></iframe>
+      <iframe height="120" src="https://www.youtube.com/embed/VIDEO_ID_11" frameborder="0" allowfullscreen></iframe>
+      <iframe height="120" src="https://www.youtube.com/embed/VIDEO_ID_12" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div>
+    <div class="card floaty" style="overflow:hidden;border-radius:1rem">
+      <!-- Hero video embed -->
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/tChp8wPswHY" title="KuttymaTV Hero Video" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
 
-        <!-- Featured 12 videos grid -->
-        <div class="grid cols-3" style="margin-top:1.5rem;gap:1rem">
-          <iframe height="150" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
-          <iframe height="150" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
-          <iframe height="150" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
-          <iframe height="150" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
-          <iframe height="150" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
-          <iframe height="150" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
-          <iframe height="150" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
-          <iframe height="150" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
-          <iframe height="150" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
-          <iframe height="150" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
-          <iframe height="150" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
-          <iframe height="150" src="https://www.youtube.com/embed/tChp8wPswHY" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div>
-        <div class="card floaty" style="overflow:hidden;border-radius:1rem">
-          <!-- Hero video embed -->
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/tChp8wPswHY" title="KuttymaTV Hero Video" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </section>
+<section id="about">
+  <h2>எங்களை பற்றி</h2>
+  <div class="grid cols-2">
+    <div class="card">குட்டிமா TV குழந்தைகளுக்கான பாதுகாப்பான கற்றல் தளம்.</div>
+    <div class="card"><ul><li>மொபைல் நட்பு</li><li>நிறமயமான கற்றல்</li><li>குழந்தைகளுக்கான பாதுகாப்பு</li></ul></div>
+  </div>
+</section>
 
-    <section id="about">
-      <h2>எங்களை பற்றி</h2>
-      <div class="grid cols-2">
-        <div class="card">குட்டிமா TV குழந்தைகளுக்கான பாதுகாப்பான கற்றல் தளம்.</div>
-        <div class="card"><ul><li>மொபைல் நட்பு</li><li>நிறமயமான கற்றல்</li><li>குழந்தைகளுக்கான பாதுகாப்பு</li></ul></div>
-      </div>
-    </section>
+<section id="services">
+  <h2>நாங்கள் செய்வது</h2>
+  <div class="grid cols-3">
+    <div class="card">கதைகள்</div>
+    <div class="card">பாடல்கள் / ABC / 123</div>
+    <div class="card">செயல்பாடுகள்</div>
+  </div>
+</section>
 
-    <section id="services">
-      <h2>நாங்கள் செய்வது</h2>
-      <div class="grid cols-3">
-        <div class="card">கதைகள்</div>
-        <div class="card">பாடல்கள் / ABC / 123</div>
-        <div class="card">செயல்பாடுகள்</div>
-      </div>
-    </section>
+<section id="videos">
+  <h2>எங்கள் அனைத்து வீடியோக்கள்</h2>
+  <div class="card" style="overflow:hidden">
+    <!-- Full uploads playlist shows everything, scrollable -->
+    <iframe width="100%" height="520" src="https://www.youtube.com/embed?listType=playlist&list=UUCch__Vn91S_Fub05SXh4rQ" title="KuttymaTV – All Uploads" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <p style="text-align:center;margin-top:1rem">
+    <a class="btn" href="https://www.youtube.com/playlist?list=UUCch__Vn91S_Fub05SXh4rQ" target="_blank" rel="noopener">YouTube-ல் முழுப் பட்டியல்</a>
+  </p>
+<p style="text-align:center;margin-top:1rem">
+    <a class="btn" href="https://www.youtube.com/playlist?list=UUCch__Vn91S_Fub05SXh4rQ" target="_blank" rel="noopener">YouTube-ல் முழுப் பட்டியல்</a>
+  </p>
 
-    <section id="videos">
-      <h2>எங்கள் அனைத்து வீடியோக்கள்</h2>
-      <div class="card" style="overflow:hidden">
-        <!-- Full uploads playlist shows everything, scrollable -->
-        <iframe width="100%" height="520" src="https://www.youtube.com/embed?listType=playlist&list=UUCch__Vn91S_Fub05SXh4rQ" title="KuttymaTV – All Uploads" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <p style="text-align:center;margin-top:1rem">
-        <a class="btn" href="https://www.youtube.com/playlist?list=UUCch__Vn91S_Fub05SXh4rQ" target="_blank" rel="noopener">YouTube-ல் முழுப் பட்டியல்</a>
-      </p>
-    </section>
+  <h3 style="margin-top:2rem">சமீபத்திய 12 வீடியோக்கள்</h3>
+  <div id="latestGrid" class="grid cols-4"></div>
+</section>
 
-    <section id="contact">
-      <h2>தொடர்பு</h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <form action="mailto:hello@kuttymatv.com" method="post" enctype="text/plain">
-            <input type="text" placeholder="பெயர்" required>
-            <input type="email" placeholder="மின்னஞ்சல்" required>
-            <textarea rows="5" placeholder="உங்கள் செய்தி"></textarea>
-            <button class="btn">அனுப்பு</button>
-          </form>
-        </div>
-        <div class="card">YouTube: <a href="https://youtube.com/@KuttymaTV">KuttymaTV</a></div>
-      </div>
-    </section>
-  </main>
+<section id="contact">
+  <h2>தொடர்பு</h2>
+  <div class="grid cols-2">
+    <div class="card">
+      <form action="mailto:hello@kuttymatv.com" method="post" enctype="text/plain">
+        <input type="text" placeholder="பெயர்" required>
+        <input type="email" placeholder="மின்னஞ்சல்" required>
+        <textarea rows="5" placeholder="உங்கள் செய்தி"></textarea>
+        <button class="btn">அனுப்பு</button>
+      </form>
+    </div>
+    <div class="card">YouTube: <a href="https://youtube.com/@KuttymaTV">KuttymaTV</a></div>
+  </div>
+</section>
 
-  <footer class="container" style="padding:2rem 0;color:#cbd5e1">© <span id="year"></span> குட்டிமா TV</footer>
+  </main>  <footer class="container" style="padding:2rem 0;color:#cbd5e1">© <span id="year"></span> குட்டிமா TV</footer>  <script>
+  document.getElementById('year').textContent=new Date().getFullYear();
 
-  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
-</body>
+  // Auto-load last 12 videos from YouTube channel feed (no API key needed)
+  (async function(){
+    const CHANNEL_ID = 'UCCch__Vn91S_Fub05SXh4rQ';
+    const FEED = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+    const grid = document.getElementById('latestGrid');
+    if(!grid) return;
+    try{
+      const res = await fetch(FEED);
+      const xml = await res.text();
+      const doc = new DOMParser().parseFromString(xml,'application/xml');
+      const entries = Array.from(doc.getElementsByTagName('entry')).slice(0,12);
+      const frag = document.createDocumentFragment();
+      entries.forEach(e=>{
+        const id = e.getElementsByTagNameNS('http://www.youtube.com/xml/schemas/2015','videoId')[0]?.textContent
+          || (e.getElementsByTagName('link')[0]?.getAttribute('href')||'').split('v=')[1];
+        const title = e.getElementsByTagName('title')[0]?.textContent||'';
+        if(!id) return;
+        const a=document.createElement('a');
+        a.href=`https://www.youtube.com/watch?v=${id}`; a.target='_blank'; a.rel='noopener';
+        a.innerHTML=`<div class="video-card"><img loading="lazy" src="https://i.ytimg.com/vi/${id}/hqdefault.jpg" alt="${title}"><div class="meta">${title}</div></div>`;
+        frag.appendChild(a);
+      });
+      grid.appendChild(frag);
+    }catch(err){
+      grid.innerHTML = '<div class="card">வீடியோக்களை ஏற்றுவதில் சிக்கல். பின்னர் முயற்சி செய்யவும்.</div>';
+      console.error(err);
+    }
+  })();
+</script></body>
 </html>
