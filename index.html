@@ -107,10 +107,10 @@
   <h2>எங்கள் அனைத்து வீடியோக்கள்</h2>
   <div class="card" style="overflow:hidden">
     <!-- Full uploads playlist shows everything, scrollable -->
-    <iframe width="100%" height="520" src="https://www.youtube.com/embed?listType=playlist&list=UUCch__Vn91S_Fub05SXh4rQ" title="KuttymaTV – All Uploads" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="520" src="https://www.youtube.com/embed?listType=playlist&list=PLaC71W7wlf2jdnY8g8uPvc0WPoqqwJZQO" title="KuttymaTV – All Uploads" frameborder="0" allowfullscreen></iframe>
   </div>
   <p style="text-align:center;margin-top:1rem">
-    <a class="btn" href="https://www.youtube.com/playlist?list=UUCch__Vn91S_Fub05SXh4rQ" target="_blank" rel="noopener">YouTube-ல் முழுப் பட்டியல்</a>
+    <a class="btn" href="https://www.youtube.com/playlist?list=PLaC71W7wlf2jdnY8g8uPvc0WPoqqwJZQO" target="_blank" rel="noopener">YouTube-ல் முழுப் பட்டியல்</a>
   </p>
 <p style="text-align:center;margin-top:1rem">
     <a class="btn" href="https://www.youtube.com/playlist?list=UUCch__Vn91S_Fub05SXh4rQ" target="_blank" rel="noopener">YouTube-ல் முழுப் பட்டியல்</a>
@@ -140,8 +140,8 @@
 
   // Auto-load last 12 videos from YouTube channel feed (no API key needed)
   (async function(){
-    const CHANNEL_ID = 'UCCch__Vn91S_Fub05SXh4rQ';
-    const FEED = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+    const PLAYLIST_ID = 'PLaC71W7wlf2jdnY8g8uPvc0WPoqqwJZQO';
+    const FEED = `https://www.youtube.com/feeds/videos.xml?playlist_id=${PLAYLIST_ID}`;
     const grid = document.getElementById('latestGrid');
     if(!grid) return;
     try{
